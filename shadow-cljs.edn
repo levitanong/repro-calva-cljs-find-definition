@@ -1,0 +1,7 @@
+{:deps     true
+ :builds   {:app {:target           :browser
+                  :output-dir       "resources/public/js"
+                  :asset-path       "/js"
+                  :compiler-options {:infer-externs :auto}
+                  :modules          {:main {:init-fn repro.core/init}}
+                  :devtools         {:after-load repro.core/init}}}}
